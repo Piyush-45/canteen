@@ -45,7 +45,7 @@ const HowItWorks = () => {
             Ordering food with us is quick and easy. Just follow these simple steps.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center text-center space-y-4">
@@ -61,21 +61,6 @@ const HowItWorks = () => {
               <p className="text-muted-foreground">{step.description}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 bg-food-light rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-semibold mb-4">Ready to place your first order?</h3>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Join thousands of satisfied customers who order with us daily. Your delicious meal is just a few clicks away.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-food-primary hover:bg-food-dark text-white px-6 py-3 rounded-lg font-medium transition-colors">
-              Download Our App
-            </button>
-            <button className="bg-transparent border border-food-primary text-food-primary hover:bg-food-primary/10 px-6 py-3 rounded-lg font-medium transition-colors">
-              Order Online
-            </button>
-          </div>
         </div>
       </div>
     </section>
