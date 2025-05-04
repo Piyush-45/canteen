@@ -1,0 +1,103 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 100% 98%;
+    --foreground: 20 10% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 5%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 60 9% 98%;
+
+    --secondary: 25 100% 91%;
+    --secondary-foreground: 20 10% 5%;
+
+    --muted: 25 30% 96%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 25 100% 91%;
+    --accent-foreground: 20 10% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 20 5% 90%;
+    --input: 20 5% 90%;
+    --ring: 24 95% 53%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 10% 5%;
+    --foreground: 60 9% 98%;
+
+    --card: 20 10% 8%;
+    --card-foreground: 60 9% 98%;
+
+    --popover: 20 10% 8%;
+    --popover-foreground: 60 9% 98%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 60 9% 98%;
+
+    --secondary: 25 30% 15%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 25 30% 15%;
+    --muted-foreground: 25 5% 65%;
+
+    --accent: 25 30% 15%;
+    --accent-foreground: 60 9% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 20 10% 20%;
+    --input: 20 10% 20%;
+    --ring: 24 95% 53%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+.food-item-card:hover .food-item-image {
+  transform: scale(1.05);
+}
+
+.food-item-image {
+  transition: transform 0.3s ease;
+}
