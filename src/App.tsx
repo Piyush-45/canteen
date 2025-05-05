@@ -12,6 +12,7 @@ import Cart from "./pages/Cart";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
 import PopularRestaurants from "./components/home/PopularRestaurants";
+import Payement from "./pages/Payement";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/cart" element={<Cart />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/about" element={<About />} />
+            <Route path="/payement" element={<Payement />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           </Routes>
         </BrowserRouter>
