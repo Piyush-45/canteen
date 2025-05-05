@@ -34,7 +34,7 @@ const Cart = () => {
   const handleCheckout = () => {
     toast.success("Order placed successfully!");
     clearCart();
-    navigate("/");
+    navigate("/payement");
   };
 
   return (
@@ -213,6 +213,7 @@ const Cart = () => {
                     onClick={handleCheckout}
                     className="w-full bg-food-primary hover:bg-food-dark text-white"
                     disabled={items.length === 0}
+
                   >
                     Proceed to Checkout
                   </Button>
